@@ -3,5 +3,6 @@ $(document).ready(function () {
     $('#clickme').click(function (){
         clicks++;
         $('#clicks').text(clicks);
+        
     });
 });
