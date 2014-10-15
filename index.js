@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var clicks = 0;
+    var clicks = localStorage.clickcount;
     $('#clickme').click(function () {
         clicks++;
         $('#clicks').text(clicks);
