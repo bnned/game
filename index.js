@@ -18,7 +18,7 @@ $(document).ready(function () {
         if (Number(localStorage.clickcount) - Number(localStorage.upgrade1) >= 0) {
             alert();
             localStorage.clickcount = Number(localStorage.clickcount) - Number(localStorage.upgrade1);
-            localStorage.upgrade1 = localStorage.upgrade1 + 15 + round(math.pow(Number(localStorage.upgrade1), 1.50));
+            localStorage.upgrade1 = Number(localStorage.upgrade1) + 15 + round(math.pow(Number(localStorage.upgrade1), 1.50));
             $('#upgrade1').html(localStorage.upgrade1);
             $('#clicks').html(localStorage.clickcount);
             localStorage.clickmulti = Number(localStorage.clickmulti) + .5;
@@ -27,7 +27,7 @@ $(document).ready(function () {
     $('#up2').click(function () {
         if (Number(localStorage.clickcount) - Number(localStorage.upgrade2) >= 0) {
             localStorage.clickcount = Number(localStorage.clickcount) - Number(localStorage.upgrade2);
-            localStorage.upgrade2 = localStorage.upgrade2 + 150 + round(math.pow(Number(localStorage.upgrade2), 1.50));
+            localStorage.upgrade2 = Number(localStorage.upgrade2) + 150 + round(math.pow(Number(localStorage.upgrade2), 1.50));
             $('#upgrade2').html(localStorage.upgrade2);
             $('#clicks').html(localStorage.clickcount);
             localStorage.clickmulti = Number(localStorage.clickmulti) + .5;
@@ -36,7 +36,7 @@ $(document).ready(function () {
     $('#up3').click(function () {
         if (Number(localStorage.clickcount) - Number(localStorage.upgrade3) >= 0) {
             localStorage.clickcount = Number(localStorage.clickcount) - Number(localStorage.upgrade3);
-            localStorage.upgrade3 = localStorage.upgrade3 + 1500 + round(math.pow(Number(localStorage.upgrade3), 1.50));
+            localStorage.upgrade3 = Number(localStorage.upgrade3) + 1500 + round(math.pow(Number(localStorage.upgrade3), 1.50));
             $('#upgrade3').html(localStorage.upgrade3);
             $('#clicks').html(localStorage.clickcount);
             localStorage.clickmulti = Number(localStorage.clickmulti) + .5;
