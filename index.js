@@ -7,6 +7,7 @@ $(document).ready(function () {
         localStorage.upgrade3 = 1500;
     }
     $('#clicks').html(localStorage.clickcount);
+    $('#clickmulti').html(localStorage.clickcount);
     $('#upgrade1').html(localStorage.upgrade1);
     $('#upgrade2').html(localStorage.upgrade2);
     $('#upgrade3').html(localStorage.upgrade3);
@@ -22,6 +23,7 @@ $(document).ready(function () {
             $('#upgrade1').html(localStorage.upgrade1);
             $('#clicks').html(localStorage.clickcount);
             localStorage.clickmulti = Number(localStorage.clickmulti) + .5;
+            $('#clickmulti').html(localStorage.clickcount);
         }
     });
     $('#up2').click(function () {
@@ -31,6 +33,7 @@ $(document).ready(function () {
             $('#upgrade2').html(localStorage.upgrade2);
             $('#clicks').html(localStorage.clickcount);
             localStorage.clickmulti = Number(localStorage.clickmulti) + .5;
+            $('#clickmulti').html(localStorage.clickcount);
         }
     });
     $('#up3').click(function () {
@@ -40,6 +43,7 @@ $(document).ready(function () {
             $('#upgrade3').html(localStorage.upgrade3);
             $('#clicks').html(localStorage.clickcount);
             localStorage.clickmulti = Number(localStorage.clickmulti) + .5;
+            $('#clickmulti').html(localStorage.clickcount);
         }
     });
     $('#win').click(function () {
