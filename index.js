@@ -19,7 +19,7 @@ $(document).ready(function () {
         if (Number(localStorage.clickcount) - Number(localStorage.upgrade1) >= 0) {
             alert();
             localStorage.clickcount = Number(localStorage.clickcount) - Number(localStorage.upgrade1);
-            localStorage.upgrade1 = Number(localStorage.upgrade1) + 15 + round(math.pow(Number(localStorage.upgrade1), 1.50));
+            localStorage.upgrade1 = Number(localStorage.upgrade1) + 15;// + round(math.pow(Number(localStorage.upgrade1), 1.50));
             $('#upgrade1').html(localStorage.upgrade1);
             $('#clicks').html(localStorage.clickcount);
             localStorage.clickmulti = Number(localStorage.clickmulti) + .5;
