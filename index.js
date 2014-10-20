@@ -25,6 +25,7 @@ $(document).ready(function () {
     });
     $('#up2').click(function () {
         if (Number(localStorage.clickcount) - Number(localStorage.upgrade2) >= 0) {
+            alert();
             localStorage.clickcount = Number(localStorage.clickcount) - Number(localStorage.upgrade2);
             localStorage.upgrade2 = localStorage.upgrade2 + 150 + round(math.pow(Number(localStorage.upgrade2), 1.50));
             $('#upgrade2').text(localStorage.upgrade2);
