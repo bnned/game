@@ -11,7 +11,7 @@ $(document).ready(function () {
     $('#upgrade2').text(localStorage.upgrade2);
     $('#upgrade3').text(localStorage.upgrade3);
     $('#clickme').click(function () {
-        localStorage.clickcount = Number(localStorage.clickcount);
+        localStorage.clickcount = Number(localStorage.clickmulti);
         $('#clicks').text(localStorage.clickcount);
     });
     $('#up1').click(function () {
