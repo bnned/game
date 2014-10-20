@@ -1,9 +1,11 @@
 $(document).ready(function () {
     var clicks = localStorage.clickcount;
     alert(localStorage.upgrade1);
-    var upgrade1 = 15;
-    var upgrade2 = 150;
-    var upgrade3 = 1500;
+    if(typeof localStorage.upgrade1 === "undefined") {
+        localStorage.upgrade1 = 15;
+        localStorage.upgrade2 = 150;
+        localStorage.upgrade3 = 1500;
+    }
     $('#clicks').text(clicks);
     $('#upgrade1').text(upgrade1);
     $('#upgrade2').text(upgrade2);
