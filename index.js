@@ -6,8 +6,7 @@ $(document).ready(function () {
         $('#clicks').text(clicks);
     });
     $('#save').click(function () {
-        alert();
+        alert("Save Complete");
         localStorage.clickcount = clicks;
-        $("#clicks").text("You have clicked the button " + localStorage.clickcount + " time(s).");
     });
 });
