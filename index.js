@@ -7,7 +7,7 @@ $(document).ready(function () {
         localStorage.upgrade3 = 1500;
     }
     $('#clicks').html(localStorage.clickcount);
-    $('#clickmulti').html(localStorage.clickcount);
+    $('#clickmulti').html(localStorage.clickmulti);
     $('#upgrade1').html(localStorage.upgrade1);
     $('#upgrade2').html(localStorage.upgrade2);
     $('#upgrade3').html(localStorage.upgrade3);
