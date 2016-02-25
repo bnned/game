@@ -1,4 +1,8 @@
-$(document).ready(function () {
+(function($){
+    /*Make sure jquery is loaded*/
+    if(!$){
+        return;
+    }
     if (typeof localStorage.upgrade1 === "undefined") {
         localStorage.clickcount = 0;
         localStorage.clickmulti = 1;
@@ -51,4 +55,4 @@ $(document).ready(function () {
             alert("You Win");
         }
     });
-});
+})(jQuery);

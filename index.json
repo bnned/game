@@ -1,0 +1,6 @@
+{
+    "upgrades": [
+        {"name":"One"},
+        {"name":"Two"}
+    ]
+}
