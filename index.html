@@ -4,50 +4,25 @@
         <title>Neoaptt Game</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
         <link href="index.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div class="wrapper">
+        <div class="wrapper noselect">
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-8">
-                        <div class="row">
-                            <div class="upgrades">
-                                <div class="upgrade" id="up1">
-                                    One Upgrade <span id="upgrade1"></span>
-                                </div>
-                                <div class="upgrade" id="up2">
-                                    Two Upgrade <span id="upgrade2"></span>
-                                </div>
-                                <div class="upgrade" id="up3">
-                                    Three Upgrade <span id="upgrade3"></span>
-                                </div>
-                                <div class="upgrade" id="win">
-                                    Win The Game <span id="upgrade3">5000000</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-4">
-                        <div id="clickme" class="customWell">
-                            Click me
-                        </div>
-                    </div>
+                <div id="clickme" class="customWell">Click me</div>
+                <div class="clickInfo" id="stats">Clicks: <span id="clicks"></span> Multi: <span id="clickmulti"></span></div>
+                <div class="upgrades">
+                    <div class="upgrade" id="up1">One Upgrade <span id="upgrade1"></span></div>
+                    <div class="upgrade" id="up2">Two Upgrade <span id="upgrade2"></span></div>
+                    <div class="upgrade" id="up3">Three Upgrade <span id="upgrade3"></span></div>
+                    <div class="upgrade" id="win">Win The Game <span id="upgrade3">5000000</span></div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <div class="customWell" id="stats">Clicks: <span id="clicks"></span> Multi: <span id="clickmulti"></span></div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class="customWell" id="stats"><button id="save">Save</button></div>
-                    </div>
-                </div>
+                <button id="save">Save</button>
             </div>
         </div>
-
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="index.js" type="text/javascript"></script>
     </body>
 </html>

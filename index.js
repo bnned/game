@@ -25,7 +25,7 @@
             localStorage.upgrade1 = 15 + Math.round(Math.pow(Number(localStorage.upgrade1), 1.01));
             $('#upgrade1').html(localStorage.upgrade1);
             $('#clicks').html(localStorage.clickcount);
-            localStorage.clickmulti = Number(localStorage.clickmulti) + .5;
+            localStorage.clickmulti = Number(localStorage.clickmulti) + 0.5;
             $('#clickmulti').html(localStorage.clickmulti);
         }
     });

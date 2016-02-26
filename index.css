@@ -1,32 +1,89 @@
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .wrapper {
-    padding-top: 30px;
+  cursor: default;
+  padding-top: 30px;
 }
+
+.container {
+  margin: 0 auto;
+  width: 950px;
+}
+
 .customWell {
-    border-radius: 1em;
-    border: 1px solid black;
-    background-color: lightblue;
-    padding: 10px;
+
 }
+
+.clickInfo {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.clickInfo span {
+  color: #009FFF;
+}
+
 #clickme {
-    height: 100px;
-    width: 100px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  line-height: 100px;
+  border: 1px #A5A5A5 solid;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #E6E6E6;
+  transition: .1s;
+  margin: 0 auto;
 }
+
+#clickme:hover {
+  background: #fff;
+}
+
+#clickme:active {
+  background: #E6E6E6;
+}
+
+#save {
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
 .upgrade:hover {
-    background-color: blue;
+  background-color: #D6D6D6;
 }
+
 .upgrades {
-    height: 100%;
+  height: 100%;
+  width: 100%;
+  border: 1px #000 solid;
+}
+
+.upgrade {
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px #E6E6E6 solid;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.upgrades span {
+  color: #009FFF;
+}
+
+@media (max-width: 970px) {
+  .container {
+    margin: 0 auto;
     width: 100%;
-     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  }
 }
